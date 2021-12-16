@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body style="background-image: url('./img/Favela_login.jpeg');">
+    <main>
+        <!--form action="teste.php" method="POST" name="meu-formulario" oninput="x.value=parentInt(a.value)+parentInt(b.value)"-->
+        <div class='corpo'>
+            <header>
+                <h2>login</h2>
+            </header>
+            <section>
+                <fildset>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="usuário" required/>
+                    <br>
+                    <div>                    
+                        <input type="password" id="senha" name="senha" minlength="4" required placeholder="senha" mousedown="clicar()" mouseup="soltar()"/>
+                        <img src="./img/olho.png" alt="" id="olho" />
+                    </div>
+
+                    <!--Visualizar senha-->
+                    <br>
+                    <input type="submit" value="Pronto" id="Pronto" onclick="Pronto()"/>
+                </fildset>  
+            </section>
+            <div class="midia">
+                <p>- Ou logar com -</p>
+                    <ul class="mid">
+                        <strong>
+                            <li class="fb"><a href="#">Facebook</a></li>                        
+                            <li class='twt'><a href="#">Twitter</a></li>
+                            <li class='insta'><a href="#">Instagram</a></li>
+                        </strong>
+                    </ul>
+                </div>
+        <div>
+        </form>
+    </main>
+</body>
+</html>
